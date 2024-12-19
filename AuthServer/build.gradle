@@ -24,6 +24,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'com.fasterxml.jackson.core:jackson-databind'
 	implementation 'org.springframework.security:spring-security-core'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
 	implementation 'org.json:json:20210307'
 	implementation 'com.squareup.okhttp3:okhttp:4.10.0'
 	compileOnly 'org.projectlombok:lombok'

@@ -11,7 +11,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "naver_users") // 테이블 이름을 naver_users로 설정
+@Table(name = "naver_users")
 public class NaverUser {
 
     @Id

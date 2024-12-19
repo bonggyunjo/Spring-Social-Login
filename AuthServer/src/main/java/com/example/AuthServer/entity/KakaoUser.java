@@ -11,7 +11,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "kakao_users") // 테이블 이름을 kakao_users로 변경
+@Table(name = "kakao_users")
 public class KakaoUser {
 
     @Id

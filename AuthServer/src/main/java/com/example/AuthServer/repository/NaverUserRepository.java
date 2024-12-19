@@ -8,5 +8,5 @@ import java.util.Optional;
 
 @Repository
 public interface NaverUserRepository extends JpaRepository<NaverUser, Long> {
-    Optional<NaverUser> findByNaverId(String naverId); // Optional<NaverUser> 반환
+    Optional<NaverUser> findByNaverId(String naverId);
 }

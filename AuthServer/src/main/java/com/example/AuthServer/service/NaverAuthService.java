@@ -105,7 +105,7 @@ public class NaverAuthService {
             newUser.setNaverId(userInfo.getNaverId());
             newUser.setCreatedAt(LocalDateTime.now());
             newUser.setUpdatedAt(LocalDateTime.now());
-            newUser.setUserType("네이버"); // 여기에 "네이버"가 설정되어야 합니다.
+            newUser.setUserType("네이버");
             userRepository.save(newUser);
         }
     }

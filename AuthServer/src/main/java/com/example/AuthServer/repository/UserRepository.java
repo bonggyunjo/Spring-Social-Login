@@ -1,7 +1,7 @@
 package com.example.AuthServer.repository;
 
-import com.example.AuthServer.entity.NaverUser;
-import com.example.AuthServer.entity.User; // 올바른 User 엔티티 경로
+
+import com.example.AuthServer.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

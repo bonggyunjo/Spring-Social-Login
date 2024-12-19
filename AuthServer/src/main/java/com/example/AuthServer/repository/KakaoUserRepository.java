@@ -1,6 +1,6 @@
 package com.example.AuthServer.repository;
 
-import com.example.AuthServer.entity.KakaoUser; // 변경된 클래스
+import com.example.AuthServer.entity.KakaoUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

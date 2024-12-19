@@ -12,7 +12,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @Entity
 @Table(name = "kakao_users") // 테이블 이름을 kakao_users로 변경
-public class SocialUser {
+public class KakaoUser {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -35,7 +35,7 @@ public class SocialUser {
     @JoinColumn(name = "user_id", referencedColumnName = "id", insertable = false, updatable = false)
     private User user;
 
-    public SocialUser(String kakaoId, String nickname, String profileImage) {
+    public KakaoUser(String kakaoId, String nickname, String profileImage) {
         this.kakaoId = kakaoId;
         this.nickname = nickname;
         this.profileImage = profileImage;

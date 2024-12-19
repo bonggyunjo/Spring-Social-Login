@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.time.LocalDateTime;
 import java.util.Scanner;
 
 @Service
@@ -102,6 +103,9 @@ public class NaverAuthService {
             newUser.setProfileImage(userInfo.getProfileImage());
             newUser.setPassword("null");
             newUser.setNaverId(userInfo.getNaverId());
+            newUser.setCreatedAt(LocalDateTime.now());
+            newUser.setUpdatedAt(LocalDateTime.now());
+            newUser.setUserType("네이버"); // 여기에 "네이버"가 설정되어야 합니다.
             userRepository.save(newUser);
         }
     }

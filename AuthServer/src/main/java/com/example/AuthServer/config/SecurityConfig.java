@@ -23,7 +23,8 @@ public class SecurityConfig {
                                 "/api/auth/kakao/success",
                                 "/api/auth/session",
                                 "/api/auth/naver",
-                                "/api/auth/naver/callback"
+                                "/api/auth/naver/callback",
+                                "/api/auth/register"
                         ).permitAll() // 카카오 및 네이버 관련 URL을 허용
                         .anyRequest().authenticated()
                 )

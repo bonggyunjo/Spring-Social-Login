@@ -24,7 +24,7 @@ public class UserService {
         user.setProfileImage(userDto.getProfileImage());
         user.setCreatedAt(LocalDateTime.now());
         user.setUpdatedAt(LocalDateTime.now());
-        user.setUserType("normal"); // 일반 사용자로 설정
+        user.setUserType("일반"); // 일반 사용자로 설정
 
         return userRepository.save(user);
     }

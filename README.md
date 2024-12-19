@@ -30,7 +30,7 @@ kakao.logout.redirect.uri
 spring.security.oauth2.client.registration.kakao.client-id
 spring.security.oauth2.client.registration.kakao.redirect-uri
 spring.security.oauth2.client.registration.kakao.authorization-grant-type
-spring.security.oauth2.client.registration.kakao.scope=profile
+spring.security.oauth2.client.registration.kakao.scope
 spring.security.oauth2.client.provider.kakao.authorization-uri
 spring.security.oauth2.client.provider.kakao.token-uri
 spring.security.oauth2.client.provider.kakao.user-info-uri

@@ -1,13 +1,13 @@
-# Auth Server
+# Auth Server ( OAuth 2.0 적용 )
 
 - 목적
-> 프로젝트 개발에 대해 빠른 개발 구축을 위한 샘플 코드 및 확장성 용이하게
-- 기능 ( OAuth 2.0 적용 )
-> 카카오 로그인
+> 프로젝트 개발에 대해 빠른 개발 구축을 위한 샘플 코드 및 확장성 용이하게 
+- 기능 
+> 카카오 로그인 ✔
 
 > 구글 로그인
 
-> 네이버 로그인
+> 네이버 로그인 ✔
 
 ---
 
@@ -35,6 +35,17 @@ spring.security.oauth2.client.provider.kakao.authorization-uri
 spring.security.oauth2.client.provider.kakao.token-uri
 spring.security.oauth2.client.provider.kakao.user-info-uri
 
+#네이버 로그인 관련 설정
+naver.client.id
+naver.client.secret
+spring.security.oauth2.client.registration.naver.client-id
+spring.security.oauth2.client.registration.naver.client-secret
+spring.security.oauth2.client.registration.naver.scope
+spring.security.oauth2.client.registration.naver.authorization-grant-type
+spring.security.oauth2.client.registration.naver.redirect-uri
+spring.security.oauth2.client.provider.naver.authorization-uri
+spring.security.oauth2.client.provider.naver.token-uri
+spring.security.oauth2.client.provider.naver.user-info-uri
 ```
 DB 구조
 - 기본 테이블 : 회원 테이블

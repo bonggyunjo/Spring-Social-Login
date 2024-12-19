@@ -42,6 +42,6 @@ public class User {
     @Column(name = "updated_at")
     private LocalDateTime updatedAt;
 
-    @Column(name = "user_type") // 구분 컬럼 추가
+    @Column(name = "user_type") // 구분 컬럼 추가 (일반 사용자면 normal(일반) 일반 사용자가 아닌 소셜 로그인 회원이면 'social'로 구분하기 위한 컬럼
     private String userType; // 'normal' 또는 'social'
 }

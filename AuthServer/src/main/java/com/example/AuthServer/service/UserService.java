@@ -1,10 +1,10 @@
 package com.example.AuthServer.service;
 
-
 import com.example.AuthServer.dto.UserInfo;
 import com.example.AuthServer.repository.UserRepository;
-import com.example.AuthServer.entity.User; // 올바른 User 엔티티 경로
+import com.example.AuthServer.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import java.time.LocalDateTime;
 
@@ -13,9 +13,12 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
+    // BCryptPasswordEncoder를 사용하여 비밀번호 해싱
+    private final BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+
     public User registerUser(UserInfo userDto) {
         User user = new User();
-        user.setPassword(userDto.getPassword());
+        user.setPassword(passwordEncoder.encode(userDto.getPassword())); // 비밀번호 해싱
         user.setEmail(userDto.getEmail());
         user.setNickname(userDto.getNickname());
         user.setProfileImage(userDto.getProfileImage());

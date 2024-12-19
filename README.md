@@ -2,7 +2,7 @@
 
 - 목적
 > 프로젝트 개발에 대해 빠른 개발 구축을 위한 샘플 코드 및 확장성 용이하게
-- 기능
+- 기능 ( OAuth 2.0 적용 )
 > 카카오 로그인
 
 > 구글 로그인
@@ -27,6 +27,13 @@ spring.jpa.show-sql
 kakao.client.id
 kakao.redirect.uri
 kakao.logout.redirect.uri
+spring.security.oauth2.client.registration.kakao.client-id
+spring.security.oauth2.client.registration.kakao.redirect-uri
+spring.security.oauth2.client.registration.kakao.authorization-grant-type
+spring.security.oauth2.client.registration.kakao.scope
+spring.security.oauth2.client.provider.kakao.authorization-uri
+spring.security.oauth2.client.provider.kakao.token-uri
+spring.security.oauth2.client.provider.kakao.user-info-uri
 
 ```
 DB 구조

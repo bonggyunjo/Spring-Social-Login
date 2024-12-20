@@ -39,6 +39,9 @@ public class User {
     @Column(name = "naver_id", nullable = true) // nullable을 true로 설정
     private String naverId; // 카카오 ID
 
+    @Column(name = "google_id", nullable = true) // nullable을 true로 설정
+    private String googleId; // 카카오 ID
+
     @Column(name = "created_at", updatable = false)
     private LocalDateTime createdAt;
 

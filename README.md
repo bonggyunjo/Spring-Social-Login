@@ -8,7 +8,7 @@
 - 기능 
 > 카카오 로그인 ✔
 
-> 구글 로그인
+> 구글 로그인 ✔
 
 > 네이버 로그인 ✔
 
@@ -49,6 +49,22 @@ spring.security.oauth2.client.registration.naver.redirect-uri
 spring.security.oauth2.client.provider.naver.authorization-uri
 spring.security.oauth2.client.provider.naver.token-uri
 spring.security.oauth2.client.provider.naver.user-info-uri
+
+#구글 로그인 관련 설정
+google.client.id
+google.client.secret
+google.redirect.uri
+
+spring.security.oauth2.client.registration.google.client-id
+spring.security.oauth2.client.registration.google.client-secret
+spring.security.oauth2.client.registration.google.scope
+spring.security.oauth2.client.registration.google.redirect-uri
+spring.security.oauth2.client.provider.google.authorization-uri
+spring.security.oauth2.client.provider.google.token-uri
+spring.security.oauth2.client.provider.google.user-info-uri
+spring.security.oauth2.client.provider.google.user-name-attribute
+
+
 ```
 DB 구조
 - 기본 테이블 : 회원 테이블

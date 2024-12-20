@@ -1,5 +1,8 @@
 # Auth Server ( OAuth 2.0 적용 )
-> SDK 방식이 아닌 RSET API + DB를 활용한 Auth Server 구현 
+> SDK 방식이 아닌 RSET API + DB를 활용한 Auth Server 구현
+<img src="https://github.com/user-attachments/assets/d4e3ab45-9fdd-47c4-a393-ba8621903c61" alt="image" width="250" />
+
+
 - 목적
 > 프로젝트 개발에 대해 빠른 개발 구축을 위한 샘플 코드 및 확장성 용이하게 
 - 기능 
